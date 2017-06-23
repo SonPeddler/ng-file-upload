@@ -143,7 +143,7 @@
         } else {
           extractFilesFromHtml(updateOnType, html).then(function (files) {
             updateModel(files, evt);
-          });
+          }, angular.noop);
         }
       });
     }
